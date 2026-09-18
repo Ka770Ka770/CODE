@@ -4,7 +4,7 @@ struct ad{
 	int b;
     string s;
 } a[8002];
-int c[8002];
+bool c[8002];
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
@@ -12,7 +12,7 @@ int main(){
     cin>>n;
     for(int i=0;i<n;i++){
         cin>>a[i].b>>a[i].s;
-        c[a[i].b-1]++;
+        c[a[i].b]=1;
     }
     int k;
     cin>>k;
@@ -23,7 +23,7 @@ int main(){
         cin>>o;
         for(int j=0;j<n;j++){
             if(a[j].s==s1){
-                c[o-1]++;
+                c[o]=1;
                 break;
             }
         }
@@ -32,7 +32,7 @@ int main(){
     for(int i=0;i<n;i++){
         int u;
         cin>>u;
-        if(c[u-1]!=0){
+        if(c[u]){
             cout<<"no"<<'\n';
         }
         else{
