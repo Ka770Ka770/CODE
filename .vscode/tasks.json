@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/TEST",
+        "-O0",
+        "${workspaceFolder}/main.cpp",
+        "-o",
+        "${workspaceFolder}/TEST.exe",
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

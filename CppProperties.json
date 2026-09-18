@@ -1,0 +1,80 @@
+{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**",
+        "${workspaceRoot}\\include",
+        "${workspaceRoot}\\src",
+        "${workspaceRoot}\\third_party\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerSwitches": "/std:c++17 /permissive- /W4",
+      "intelliSenseMode": "windows-msvc-x64"
+    },
+    {
+      "name": "x64-Release",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**",
+        "${workspaceRoot}\\include",
+        "${workspaceRoot}\\src",
+        "${workspaceRoot}\\third_party\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerSwitches": "/std:c++17 /permissive- /W4 /O2",
+      "intelliSenseMode": "windows-msvc-x64"
+    },
+    {
+      "name": "Win32-Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**",
+        "${workspaceRoot}\\include",
+        "${workspaceRoot}\\src",
+        "${workspaceRoot}\\third_party\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerSwitches": "/std:c++17 /permissive- /W4",
+      "intelliSenseMode": "windows-msvc-x86"
+    },
+    {
+      "name": "Win32-Release",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**",
+        "${workspaceRoot}\\include",
+        "${workspaceRoot}\\src",
+        "${workspaceRoot}\\third_party\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerSwitches": "/std:c++17 /permissive- /W4 /O2",
+      "intelliSenseMode": "windows-msvc-x86"
+    }
+  ]
+}

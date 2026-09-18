@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        },
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerPath": "D:/mingw-w64-gcc-15.3-stable-r45/bin/gcc.exe"
+        }
+    ],
+    "version": 4
+}
